@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us" dir="ltr">
+
+<head>
+    <!-- viewport fix for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Veridian Wireless favicon-03.png" />
+    <title>Veridian Wireless</title>
+
+    <style>
+        body {
+            height: 100vh;
+        }
+        
+        .container {
+            max-width: 375px;
+            margin: 0 auto;
+            height: 100%;
+            box-shadow: 0 5px 10px #181818;
+        }
+        
+        .logo {
+            max-width: 10rem;
+        }
+        
+        .wifi {
+            max-width: 10rem;
+            object-fit: contain;
+        }
+        
+        .info {
+            max-width: 20rem;
+            object-fit: contain;
+        }
+        
+        input {
+            /* background-color: red; */
+            outline: none;
+            padding: 0.5rem 1rem;
+            /* width: 12rem; */
+        }
+        
+        .submit {
+            width: 3rem;
+        }
+    </style>
+</head>
+
+
+<!-- <body> -->
+<center>
+
+    <body background="./images/background.png">
+        <div class="container">
+            <img class="logo" src="./images/Veridian Wireless logo.png">
+            <div style="display: inline; text-align: center; margin: 0 auto; ">
+                <!-- Click-thru to our website - make sure the hostname is added to Allowed Hostnames in CP -->
+                <center><img class="wifi" src="./images/wifi.png">
+            </div>
+            <!-- <center><img class="info" src="/images/info.png"> -->
+            <div id="loginbox">
+                <form class="form" method="post" action="$PORTAL_ACTION$">
+                    <!-- Placeholder for optional username/password authentication here -->
+                    <!-- Voucher authentication here -->
+                    <label for="auth_voucher"><p style="color:orange; font-size:20px;">Enter your voucher code here</p></label><br />
+                    <img src="" alt="" style="border: none; vertical-align: middle;" />
+                    <input name="auth_voucher" id="auth_voucher" type="text" size="22" autofocus>
+                    <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$">
+                    <input class="submit" name="accept" type="submit" value="OK">
+                </form>
+            </div>
+            <br />
+            <!-- Just in case of PEBKAC issues -->
+            <div id="explanation-en">
+                <p style="color:white; font-size:10px;">
+                    To get a voucher code,</p>
+                <p style="color:white; font-size:15px;">
+                    Please contact Veridian Wireless</p>
+                <p style="color:white; font-size:15px; padding-bottom: 2rem;">@ 0723 032 055</p>
+            </div>
+            </center>
+        </div>
+    </body>
+
+</html>

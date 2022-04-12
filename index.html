@@ -32,13 +32,13 @@
         }
         
         .logo {
-            width: 15rem;
+            max-width: 15rem;
             margin: auto;
             padding-top: 1rem;
         }
         
         .logo>img {
-            width: 15rem;
+            max-width: 15rem;
             object-fit: contain;
             box-shadow: 0 5px 10px #181818;
             border-radius: 1rem;
@@ -111,7 +111,7 @@
         
         #explanation-en {
             max-width: 100%;
-            margin: 0.5rem auto;
+            margin: auto;
             text-align: center;
             font-weight: 700;
         }
@@ -128,6 +128,22 @@
         /* ::placeholder {
             color: rgb(255, 255, 255);
         } */
+        
+        footer {
+            color: rgba(255, 255, 255, 0.61);
+            text-align: center;
+            font-size: x-small;
+            background-color: #000000;
+        }
+        
+        .footer-link {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .footer-link:hover {
+            color: #14aa06;
+        }
     </style>
 </head>
 
@@ -174,8 +190,11 @@
                 To get a voucher code</p>
             <p style="color:white; font-size:15px;">
                 Please contact <span class="veridian">Veridian Wireless</span></p>
-            <p style="color:white; font-size:15px; padding-bottom: 2rem;">@ 0723 032 055</p>
+            <p style="color:white; font-size:15px; padding-bottom: 1rem;">@ 0723 032 055</p>
         </div>
+        <footer>
+            <p>Created by Zannoh @ <a class="footer-link" href="https://github.com/Leonard-O/captive-portal">Real Code Devs.</a> © 2022</p>
+        </footer>
     </div>
 </body>
 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veridian Wireless</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./images/captiveportal-captive logo.png" alt="" />
+        </div>
+
+        <div class="warning">
+            <a href="index.html">
+                <h1>Invalid Voucher Code !</h1>
+            </a>
+        </div>
+
+        <div class="content-w3ls">
+            <div class="content-bottom">
+                <div id="loginbox">
+                    <form class="form" method="post" action="$PORTAL_ACTION$">
+                        <!-- Placeholder for optional username/password authentication here -->
+                        <!-- Voucher authentication here -->
+                        <!-- <label for="auth_voucher"><p style="color:orange; font-size:18px; font-weight: 700; padding-top: 0.5rem;">Enter your voucher code here</p>
+                        </label> -->
+                        <!-- <img src="" alt="" style="border: none; vertical-align: middle;" /> -->
+                        <div class="voucher">
+                            <input placeholder="Enter Voucher Code Here" name="auth_voucher" id="auth_voucher" type="text" size="22" autofocus />
+                            <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$" />
+                            <input class="submit" name="accept" type="submit" value="OK" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="promo">
+            <p>Contact us to Promote your products here</p>
+            <video class="videsa" width="340" height="240" autoplay controls>
+					<source src="./videos/storyBoardTvIntro.mp4" type="video/mp4" />
+					<source src="" type="video/ogg" />
+				</video>
+        </div>
+
+        <footer>
+            <p>
+                Created by Zannoh @
+                <a class="footer-link" href="https://github.com/Leonard-O/captive-portal">Real Code Devs.</a
+					>
+					© 2022
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

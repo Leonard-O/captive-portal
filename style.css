@@ -151,6 +151,40 @@ span {
     font-weight: bolder;
 }
 
+.warning {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    /* background-color: red; */
+}
+
+.warning>h1 {
+    color: #fff;
+}
+
+.warning>a {
+    font-size: 0.7rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.promo {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.promo>p {
+    color: #fff;
+}
+
+.videsa {
+    max-width: 100%;
+    object-fit: contain;
+    padding: 0 0.5rem 0 0.5rem;
+    margin: auto;
+}
+
 
 /* ::placeholder {
     color: rgb(255, 255, 255);

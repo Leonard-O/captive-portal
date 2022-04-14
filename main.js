@@ -36,6 +36,12 @@ watch.addEventListener('click', () => {
     watch.style.display = 'none';
     back.style.display = 'block';
 
+    const video = document.createElement('video');
+    video.style.maxWidth = '100%';
+    video.src = './videos/storyBoardTvIntro.mp4';
+    video.autoplay = true;
+    promoHome.appendChild(video);
+
     window.scroll({
         top: 0,
         left: 0,
@@ -50,6 +56,7 @@ watch.addEventListener('click', () => {
         back.style.display = 'none';
         watch.style.display = 'block';
 
+        promoHome.removeChild(video);
         back.removeChild(btn);
     });
 });

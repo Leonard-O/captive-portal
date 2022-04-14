@@ -15,8 +15,17 @@
 
 <body>
     <div class="container">
+
+        <div class="promo-home">
+            <p class="promoP">Contact us to Promote your products here</p>
+            <video class="videsa" width="340" height="240" controls>
+					<source src="./videos/storyBoardTvIntro.mp4" type="video/mp4" />
+					<source src="" type="video/ogg" />
+				</video>
+        </div>
+
         <div class="logo">
-            <img src="./images/captiveportal-captive logo.png" alt="logo" />
+            <img id="logo" src="./images/captiveportal-captive logo.png" alt="logo" />
         </div>
 
         <div class="click-thru">
@@ -42,7 +51,7 @@
                 <div class="voucher">
                     <input placeholder="Enter Voucher Code Here" name="auth_voucher" id="auth_voucher" type="text" size="22" autofocus>
                     <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$">
-                    <input class="submit" name="accept" type="submit" value="OK">
+                    <input class="submit" id="ok" name="accept" type="submit" value="OK">
                 </div>
             </form>
         </div>
@@ -52,13 +61,23 @@
             <p class="p1">
                 To get a voucher code</p>
             <p class="p2">
-                Please contact <span class="veridian">Veridian Wireless</span></p>
+                Please contact <span class="veridian">Zannoh</span></p>
             <p class="p3">@ 0723 032 055</p>
         </div>
+
+        <div class="watch">
+            <button id="watch">Watch Something</button>
+        </div>
+        <div class="back">
+            <!-- <button class="backHome">back</button> -->
+        </div>
+
+
         <footer>
             <p>Created by Zannoh @ <a class="footer-link" href="https://github.com/Leonard-O/captive-portal">Real Code Devs.</a> © 2022</p>
         </footer>
     </div>
+    <script src="./main.js"></script>
 </body>
 
 
